@@ -1,8 +1,8 @@
 class minecraft {
-	$url = 'https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar'
-	$java_url = 'https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm'
+	$url = 'https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar',
+	$java_url = 'https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm',
   	$install_dir = '/opt/minecraft'
-  
+}{
   	file {'/opt/minecraft':
     		ensure => directory,
   	}
